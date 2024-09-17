@@ -1,0 +1,50 @@
+.app{
+    background-color: black;
+    background-size: 100%;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    text-align: center;
+    margin-top: 19.6%;
+}
+
+button {
+    font-size: 40px;
+    background-color: rgb(52, 48, 46);
+    border: none;
+    box-shadow: 0 5px 10px 0;
+    box-shadow: rgb(118, 135, 130);
+    cursor: pointer;
+    border-radius: 45%;
+    margin: 15px;
+    width: 115px;
+    height: 115px;
+    color: aliceblue;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+.buttons {
+    padding-bottom: auto;
+}
+
+.equal {
+    background-color: cadetblue;
+}
+
+.percent,
+.deleteAll,
+.CE {
+    background-color: rgb(151, 136, 128);
+}
+
+.delete,
+.divide,
+.mult,
+.add,
+.sub,
+.equal {
+    background-color: rgb(255, 120, 53);
+}

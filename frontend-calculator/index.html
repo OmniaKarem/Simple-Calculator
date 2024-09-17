@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+
+<body>
+    <div class="app">
+        <br />
+        <p style="color: rgb(255, 255, 255); font-size: 55px; font-weight: bold;">{{ result }}</p>
+        <br />
+        <div class="buttons">
+            <button class="percent"   @click="addOp('%')">%</button>
+            <button class="CE"        @click="deleteAll">CE</button>
+            <button class="deleteAll" @click="deleteAll">C</button>
+            <button class="delete"    @click="omit" id="delete">delete</button>
+            <br />
+            <button class="over"   @click="addOp('1/')">1/x</button>
+            <button class="pow"    @click="addOp('^')">x^n</button>
+            <button class="sprt"   @click="addOp('√')">√x</button>
+            <button class="divide" @click="addOp('/')">/</button>
+            <br />
+            <button class="b7"   @click="addOp('7')">7</button>
+            <button class="b8"   @click="addOp('8')">8</button>
+            <button class="b9"   @click="addOp('9')">9</button>
+            <button class="mult" @click="addOp('*')">x</button>
+            <br />
+            <button class="b4"  @click="addOp('4')">4</button>
+            <button class="b5"  @click="addOp('5')">5</button>
+            <button class="b6"  @click="addOp('6')">6</button>
+            <button class="sub" @click="addOp('-')">-</button>
+            <br />
+            <button class="b1"  @click="addOp('1')">1</button>
+            <button class="b2"  @click="addOp('2')">2</button>
+            <button class="b3"  @click="addOp('3')">3</button>
+            <button class="add" @click="addOp('+')">+</button>
+            <br />
+            <div class="row1">
+                <button class="inverse" @click="addOp('#')">+/-</button>
+                <button class="b0"      @click="addOp('0')">0</button>
+                <button class="point"   @click="addOp('.')">.</button>
+                <button class="equal"   @click="operate">=</button>
+            </div>
+        </div>
+    </div>
+    <script src = "app.js" type="module"></script>
+</body>
+
+</html>
